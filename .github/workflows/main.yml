@@ -24,4 +24,4 @@ jobs:
 
     - name: Run calculator logic tests
       run: |
-        python tests/test_calculator_logic.py
+        pytest tests/test_calculator_logic.py
