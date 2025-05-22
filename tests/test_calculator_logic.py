@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from calculator import calculator
 
 def test_add_positive():
-    result = calculator(-10, 5, ['add'])
+    result = calculator(20, -59, ['add'])
     assert result['add'] > 0, "Add result should be positive"
 
 def test_subtract_positive():
@@ -15,7 +15,7 @@ def test_subtract_positive():
     assert result['subtract'] > 0, "Subtract result should be positive"
 
 def test_divide_greater_equal_one():
-    result = calculator(-10, 100, ['divide'])
+    result = calculator(2, 100, ['divide'])
     assert isinstance(result['divide'], (int, float)), "Divide result should be a number"
     assert result['divide'] >= 1, "Divide result should be >= 1"
 
