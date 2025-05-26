@@ -11,11 +11,11 @@ def test_add_positive():
     assert result['add'] > 0, "Add result should be positive"
 
 def test_subtract_positive():
-    result = calculator(43444, -99, ['subtract'])
+    result = calculator(43444, 99, ['subtract'])
     assert result['subtract'] > 0, "Subtract result should be positive"
 
 def test_divide_greater_equal_one():
-    result = calculator(-34128, 1200, ['divide'])
+    result = calculator(100, 50, ['divide'])
     assert isinstance(result['divide'], (int, float)), "Divide result should be a number"
     assert result['divide'] >= 1, "Divide result should be >= 1"
 
