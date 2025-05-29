@@ -27,7 +27,7 @@ def calculator(a,b,operations):
     return results
 
 if __name__ == "__main__":
-    a = 10
+    a = -10
     b = 5
     operations = ['add', 'subtract', 'multiply', 'divide']
     
